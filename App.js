@@ -2,20 +2,19 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state={
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    }
+  }
+  render() {
+    return(
+      <View style={{flex: 1, justifyContent: 'space-around', alignItems: 'center'}}>
+        <Text style={{fontSize: 20, fontWeight: 'bold'}}>Push Notifications Using Firebase</Text>
+      </View>
+    )
+  }
+}
+export default App;
