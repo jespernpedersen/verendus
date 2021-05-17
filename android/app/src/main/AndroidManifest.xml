@@ -30,6 +30,7 @@
     android:allowBackup="false"
     android:theme="@style/AppTheme"
   >
+  
     <meta-data  android:name="com.dieam.reactnativepushnotification.notification_foreground" android:value="false"/>
     <meta-data  android:name="com.dieam.reactnativepushnotification.notification_color" android:resource="@color/blue"/> <!-- or @android:color/{name} to use a standard color -->
     <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationActions" />
