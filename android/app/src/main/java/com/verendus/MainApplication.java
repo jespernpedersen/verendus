@@ -31,6 +31,8 @@ import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Nullable;
 
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;  // <--- Import Package
+
 public class MainApplication extends Application implements ReactApplication {
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
     new BasePackageList().getPackageList()
@@ -42,11 +44,13 @@ public class MainApplication extends Application implements ReactApplication {
       return BuildConfig.DEBUG;
     }
 
-    @Override
-    protected List<ReactPackage> getPackages() {
-      List<ReactPackage> packages = new PackageList(this).getPackages();
-      packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
-      return packages;
+      @Override
+      protected List<ReactPackage> getPackages() {
+
+          return Arrays.<ReactPackage>asList(
+              new MainReactPackage(),
+              new ReactNativePushNotificationPackage() // <---- Add the Package
+          );
     }
 
     @Override
