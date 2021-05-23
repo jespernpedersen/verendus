@@ -74,7 +74,7 @@ class App extends Component {
   }
   render() {
     return(
-      <View style={{flex: 1, justifyContent: 'space-around', alignItems: 'center'}}>
+      <View style={{flex: 1, justifyContent: 'space-around', alignItems: 'center', backgroundColor: 'black'}}>
         <Text style={{fontSize: 20, fontWeight: 'bold'}}>Push Notifications Using Firebase</Text>
       </View>
     )

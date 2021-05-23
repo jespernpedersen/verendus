@@ -33,6 +33,7 @@ import javax.annotation.Nullable;
 
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;  // <--- Import Package
 
+
 public class MainApplication extends Application implements ReactApplication {
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
     new BasePackageList().getPackageList()
@@ -44,7 +45,7 @@ public class MainApplication extends Application implements ReactApplication {
       return BuildConfig.DEBUG;
     }
 
-    @Override
+ @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
