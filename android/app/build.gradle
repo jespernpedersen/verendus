@@ -212,6 +212,8 @@ dependencies {
         implementation jscFlavor
     }
 
+    compile project(':react-native-push-notification')
+
     // ADD THIS LINES
     compile(project(':react-native-push-notification')){
        exclude group: 'com.google.android.gms', module: 'play-services-base'
